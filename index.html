@@ -3,10 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamza</title>
+    <title>Flex-Ops Landing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            color-scheme: light;
+        }
+        body {
+            font-family: "Manrope", sans-serif;
+        }
+        .title-font {
+            font-family: "Space Grotesk", sans-serif;
+        }
+        .bg-grid {
+            background-image:
+                radial-gradient(circle at 10% 10%, rgba(14, 116, 144, 0.18), transparent 45%),
+                radial-gradient(circle at 80% 0%, rgba(245, 158, 11, 0.15), transparent 50%),
+                radial-gradient(circle at 50% 90%, rgba(30, 64, 175, 0.12), transparent 50%);
+        }
+        .glass {
+            backdrop-filter: blur(16px);
+            background-color: rgba(255, 255, 255, 0.86);
+        }
+    </style>
 </head>
-<body>
-     <h1>Welcome to code</h1>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+    <div class="min-h-screen bg-grid flex flex-col">
+        <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95">
+            <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4">
+                <div class="flex items-center gap-3">
+                    <div>
+                        <p class="title-font text-lg font-semibold">Flex-Ops</p>
+                        <p class="text-xs text-slate-500">Odoo Partner | Accounting, Tax & Advisory</p>
+                    </div>
+                </div>
+                <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-700 md:flex">
+                    <a href="#" class="hover:text-slate-900">Home</a>
+                    <a href="#services" class="hover:text-slate-900">Services</a>
+                    <a href="#clients" class="hover:text-slate-900">Our Clients</a>
+                    <a href="#support" class="hover:text-slate-900">Support Ticket</a>
+                </nav>
+                <button class="rounded-full bg-[#714b67] px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white">Contact Us</button>
+            </div>
+        </header>
 
+        <main class="mx-auto w-full max-w-6xl px-5 pb-20 pt-12 flex-1">
+            <section class="grid gap-12 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-700">
+                        <span>5+ Years Of Experience</span>
+                    </div>
+                    <h1 class="title-font text-4xl font-semibold leading-tight text-slate-900 md:text-5xl">
+                        The Effective<br>Solutions To Grow<br>your Business
+                    </h1>
+                    <p class="text-base text-slate-600">
+                        Flex-Ops is a multi-disciplinary accounting, tax and advisory firm that have qualified team to implementation ERP cycle to work effectively with your business.
+                    </p>
+                    <p class="text-base text-slate-600">
+                        Why us? because we have team can help you in the moment registration a company (scratch) to reach with you for discussion the financial statements.
+                    </p>
+                    <div class="inline-flex items-center gap-2 rounded-full border border-[#714b67]/30 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#714b67]">
+                        Odoo Partner
+                    </div>
+                    <div class="flex flex-wrap items-center gap-3 text-sm text-slate-500">
+                        <span class="rounded-full border border-slate-200 bg-white px-4 py-2">ERP Implementation</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-4 py-2">Tax Advisory</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-4 py-2">Audit Support</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-4 py-2">Finance Strategy</span>
+                    </div>
+                </div>
+                <div class="rounded-3xl border border-slate-200/70 bg-white/80 p-6 shadow-[0_22px_60px_rgba(15,23,42,0.15)]">
+                    <div class="flex items-center justify-between text-sm text-slate-500">
+                        <span>Popular Services</span>
+                        <span class="rounded-full bg-[#714b67] px-3 py-1 text-xs font-semibold text-white">Odoo Focus</span>
+                    </div>
+                    <h2 class="title-font mt-4 text-2xl font-semibold text-slate-900">We Provide Best Quality Service<br>For Your Business</h2>
+                    <div class="mt-6 space-y-5 text-sm text-slate-600">
+                        <div>
+                            <p class="title-font text-base font-semibold text-slate-900">ERP Solutions & software’s</p>
+                            <p>Flex-Ops, a top Odoo Partner, offers custom solutions for ERP, e-commerce, accounting, and more. We also integrate with QuickBooks, Xero, Sage, and SAP.</p>
+                        </div>
+                        <div>
+                            <p class="title-font text-base font-semibold text-slate-900">Mobile Apps</p>
+                            <p>Flex-Ops provides mobile apps to streamline operations, boosting efficiency and productivity with system integration, real-time updates, and customization.</p>
+                        </div>
+                        <div>
+                            <p class="title-font text-base font-semibold text-slate-900">Web & E-commerce</p>
+                            <p>Flex-Ops excels in Shopify, WordPress, e-commerce optimization, and hosting services (VPS/VDS/Cloud), transforming websites into sales powerhouses.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="mt-16 grid gap-8 rounded-3xl border border-slate-200/70 bg-white/80 p-8">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Working Process</p>
+                        <h2 class="title-font mt-2 text-3xl font-semibold text-slate-900">We Complete Our Work to Follow<br>Some Easy Ways</h2>
+                    </div>
+                    <span class="hidden rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-500 md:inline-flex">Structured Delivery</span>
+                </div>
+                <div class="grid gap-5 md:grid-cols-3">
+                    <div class="rounded-2xl border border-slate-200 bg-white p-5 text-sm text-slate-600">
+                        <p class="title-font text-base font-semibold text-slate-900">Discover</p>
+                        <p class="mt-2">Understand your business goals, map your ERP cycle, and define the implementation scope.</p>
+                    </div>
+                    <div class="rounded-2xl border border-slate-200 bg-white p-5 text-sm text-slate-600">
+                        <p class="title-font text-base font-semibold text-slate-900">Design</p>
+                        <p class="mt-2">Craft workflows, reporting, and integrations to keep finance, tax, and advisory aligned.</p>
+                    </div>
+                    <div class="rounded-2xl border border-slate-200 bg-white p-5 text-sm text-slate-600">
+                        <p class="title-font text-base font-semibold text-slate-900">Deliver</p>
+                        <p class="mt-2">Launch confidently with training, ongoing support, and measurable improvements.</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap items-center gap-3 text-xs text-slate-500">
+                    <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Discovery to Delivery</span>
+                    <span class="rounded-full border border-slate-200 bg-white px-3 py-1">Dedicated Support</span>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-auto border-t border-slate-200 bg-white">
+            <div class="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-5 py-5 text-sm text-slate-600 md:flex-row">
+                <div class="flex items-center gap-3">
+                    <span>Flex-Ops</span>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a class="hover:text-slate-900" href="#services">Services</a>
+                    <a class="hover:text-slate-900" href="#clients">Our Clients</a>
+                    <a class="hover:text-slate-900" href="#contact">Contact Us</a>
+                </div>
+                <p>© <span id="year"></span> Flex-Ops. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const year = document.getElementById("year");
+        year.textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
